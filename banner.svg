@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 300" width="1200" height="300">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0d1117"/>
+      <stop offset="1" stop-color="#161b22"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#d4a017"/>
+      <stop offset="1" stop-color="#f0c040"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Fond -->
+  <rect width="1200" height="300" fill="url(#bg)"/>
+  <rect x="0" y="0" width="1200" height="300" fill="none" stroke="#2b3444" stroke-width="2"/>
+
+  <!-- Ligne décorative -->
+  <line x1="0" y1="0" x2="1200" y2="0" stroke="#d4a017" stroke-width="3"/>
+
+  <!-- Compas -->
+  <g transform="translate(150,150)">
+    <circle cx="0" cy="0" r="95" fill="none" stroke="#d4a017" stroke-width="4"/>
+    <circle cx="0" cy="0" r="74" fill="none" stroke="#2b3444" stroke-width="2"/>
+    <circle cx="0" cy="0" r="14" fill="#0d1117" stroke="#d4a017" stroke-width="2"/>
+    <!-- Graduations -->
+    <g stroke="#8b95a7" stroke-width="1.5">
+      <line x1="0" y1="-95" x2="0" y2="-80"/>
+      <line x1="0" y1="80" x2="0" y2="95"/>
+      <line x1="-95" y1="0" x2="-80" y2="0"/>
+      <line x1="80" y1="0" x2="95" y2="0"/>
+    </g>
+    <!-- Aiguille nord (ambre) -->
+    <polygon points="0,-78 14,0 0,0" fill="url(#gold)"/>
+    <polygon points="0,-78 -14,0 0,0" fill="#b8860b"/>
+    <!-- Aiguille sud (gris) -->
+    <polygon points="0,78 14,0 0,0" fill="#8b95a7"/>
+    <polygon points="0,78 -14,0 0,0" fill="#5c6b80"/>
+    <!-- Points cardinaux -->
+    <text x="0" y="-102" font-size="20" fill="#d4a017" text-anchor="middle" font-family="Arial, sans-serif" font-weight="bold">N</text>
+    <text x="108" y="7" font-size="16" fill="#8b95a7" text-anchor="middle" font-family="Arial, sans-serif" font-weight="bold">E</text>
+    <text x="0" y="118" font-size="16" fill="#8b95a7" text-anchor="middle" font-family="Arial, sans-serif" font-weight="bold">S</text>
+    <text x="-108" y="7" font-size="16" fill="#8b95a7" text-anchor="middle" font-family="Arial, sans-serif" font-weight="bold">W</text>
+  </g>
+
+  <!-- Titre -->
+  <text x="300" y="150" font-size="88" fill="#e6e9ef" font-family="'Courier New', monospace" font-weight="bold" letter-spacing="2">DAC</text>
+  <text x="300" y="150" font-size="88" fill="url(#gold)" font-family="'Courier New', monospace" font-weight="bold" letter-spacing="2" dx="150">COMPASS</text>
+
+  <!-- Sous-titre -->
+  <text x="300" y="205" font-size="26" fill="#8b95a7" font-family="'Courier New', monospace" letter-spacing="6">COMPARATEUR DE DAC / AMPLIS PORTABLES</text>
+
+  <!-- Séparateur -->
+  <line x1="300" y1="225" x2="1050" y2="225" stroke="#2b3444" stroke-width="1.5"/>
+</svg>
